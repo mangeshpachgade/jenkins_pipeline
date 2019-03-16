@@ -20,7 +20,14 @@ pipeline {
                 }
             }
         }
+        
+         stage ('Build Stage') {
 
+            steps {
+                build 'build-job'
+            }
+        }
+         
         stage ('Testing Stage') {
 
             steps {
