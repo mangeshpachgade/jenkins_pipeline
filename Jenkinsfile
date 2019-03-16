@@ -8,7 +8,8 @@ pipeline {
              steps {
                  withMaven(maven : 'Local_Maven'){
                      sh 'mvn clean validate'
-             }
+                }
+            }
          }
          
         stage ('Compile Stage') {
